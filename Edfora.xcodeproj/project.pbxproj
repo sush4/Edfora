@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85C2EDB01E80343500480ACD /* local.json in Resources */ = {isa = PBXBuildFile; fileRef = 85C2EDAF1E80343500480ACD /* local.json */; };
+		85C842721E7D192900398BD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842711E7D192900398BD2 /* AppDelegate.swift */; };
+		85C842771E7D192900398BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C842751E7D192900398BD2 /* Main.storyboard */; };
+		85C8427A1E7D192900398BD2 /* Edfora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85C842781E7D192900398BD2 /* Edfora.xcdatamodeld */; };
+		85C8427C1E7D192900398BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85C8427B1E7D192900398BD2 /* Assets.xcassets */; };
+		85C8427F1E7D192900398BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85C8427D1E7D192900398BD2 /* LaunchScreen.storyboard */; };
+		85C8428A1E7D192900398BD2 /* EdforaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842891E7D192900398BD2 /* EdforaTests.swift */; };
+		85C842951E7D192900398BD2 /* EdforaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842941E7D192900398BD2 /* EdforaUITests.swift */; };
+		85C842A71E7D1A7B00398BD2 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842A61E7D1A7B00398BD2 /* ApiRequest.swift */; };
+		85C842A91E7D224E00398BD2 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842A81E7D224E00398BD2 /* Song.swift */; };
+		85C842AB1E7D2B0700398BD2 /* AppLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842AA1E7D2B0700398BD2 /* AppLogic.swift */; };
+		85C842AF1E7D45EE00398BD2 /* SongListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842AE1E7D45EE00398BD2 /* SongListViewController.swift */; };
+		85C842B21E7D49DD00398BD2 /* SongPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842B01E7D49DD00398BD2 /* SongPlayerViewController.swift */; };
+		85C842B31E7D49DD00398BD2 /* SongPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C842B11E7D49DD00398BD2 /* SongPlayerViewController.xib */; };
+		85C842B61E7D4B6000398BD2 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C842B41E7D4B6000398BD2 /* SongTableViewCell.swift */; };
+		85C842B71E7D4B6000398BD2 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85C842B51E7D4B6000398BD2 /* SongTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85C842861E7D192900398BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C842661E7D192900398BD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C8426D1E7D192900398BD2;
+			remoteInfo = Edfora;
+		};
+		85C842911E7D192900398BD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85C842661E7D192900398BD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85C8426D1E7D192900398BD2;
+			remoteInfo = Edfora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		85C2EDAF1E80343500480ACD /* local.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = local.json; sourceTree = "<group>"; };
+		85C8426E1E7D192900398BD2 /* Edfora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Edfora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C842711E7D192900398BD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		85C842761E7D192900398BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		85C842791E7D192900398BD2 /* Edfora.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Edfora.xcdatamodel; sourceTree = "<group>"; };
+		85C8427B1E7D192900398BD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		85C8427E1E7D192900398BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85C842801E7D192900398BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C842851E7D192900398BD2 /* EdforaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdforaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C842891E7D192900398BD2 /* EdforaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdforaTests.swift; sourceTree = "<group>"; };
+		85C8428B1E7D192900398BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C842901E7D192900398BD2 /* EdforaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdforaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85C842941E7D192900398BD2 /* EdforaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdforaUITests.swift; sourceTree = "<group>"; };
+		85C842961E7D192900398BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85C842A61E7D1A7B00398BD2 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		85C842A81E7D224E00398BD2 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		85C842AA1E7D2B0700398BD2 /* AppLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLogic.swift; sourceTree = "<group>"; };
+		85C842AE1E7D45EE00398BD2 /* SongListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongListViewController.swift; sourceTree = "<group>"; };
+		85C842B01E7D49DD00398BD2 /* SongPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongPlayerViewController.swift; sourceTree = "<group>"; };
+		85C842B11E7D49DD00398BD2 /* SongPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongPlayerViewController.xib; sourceTree = "<group>"; };
+		85C842B41E7D4B6000398BD2 /* SongTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		85C842B51E7D4B6000398BD2 /* SongTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85C8426B1E7D192900398BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C842821E7D192900398BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8428D1E7D192900398BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85C842651E7D192900398BD2 = {
+			isa = PBXGroup;
+			children = (
+				85C842701E7D192900398BD2 /* Edfora */,
+				85C842881E7D192900398BD2 /* EdforaTests */,
+				85C842931E7D192900398BD2 /* EdforaUITests */,
+				85C8426F1E7D192900398BD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85C8426F1E7D192900398BD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85C8426E1E7D192900398BD2 /* Edfora.app */,
+				85C842851E7D192900398BD2 /* EdforaTests.xctest */,
+				85C842901E7D192900398BD2 /* EdforaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85C842701E7D192900398BD2 /* Edfora */ = {
+			isa = PBXGroup;
+			children = (
+				85C842A21E7D19E900398BD2 /* LogicLayer */,
+				85C842A31E7D19E900398BD2 /* ModelLayer */,
+				85C842A41E7D19E900398BD2 /* NetworkLayer */,
+				85C842A51E7D19E900398BD2 /* ViewLayer */,
+				85C842711E7D192900398BD2 /* AppDelegate.swift */,
+				85C842751E7D192900398BD2 /* Main.storyboard */,
+				85C8427B1E7D192900398BD2 /* Assets.xcassets */,
+				85C8427D1E7D192900398BD2 /* LaunchScreen.storyboard */,
+				85C842801E7D192900398BD2 /* Info.plist */,
+				85C842781E7D192900398BD2 /* Edfora.xcdatamodeld */,
+				85C2EDAF1E80343500480ACD /* local.json */,
+			);
+			path = Edfora;
+			sourceTree = "<group>";
+		};
+		85C842881E7D192900398BD2 /* EdforaTests */ = {
+			isa = PBXGroup;
+			children = (
+				85C842891E7D192900398BD2 /* EdforaTests.swift */,
+				85C8428B1E7D192900398BD2 /* Info.plist */,
+			);
+			path = EdforaTests;
+			sourceTree = "<group>";
+		};
+		85C842931E7D192900398BD2 /* EdforaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				85C842941E7D192900398BD2 /* EdforaUITests.swift */,
+				85C842961E7D192900398BD2 /* Info.plist */,
+			);
+			path = EdforaUITests;
+			sourceTree = "<group>";
+		};
+		85C842A21E7D19E900398BD2 /* LogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				85C842AA1E7D2B0700398BD2 /* AppLogic.swift */,
+			);
+			path = LogicLayer;
+			sourceTree = "<group>";
+		};
+		85C842A31E7D19E900398BD2 /* ModelLayer */ = {
+			isa = PBXGroup;
+			children = (
+				85C842A81E7D224E00398BD2 /* Song.swift */,
+			);
+			path = ModelLayer;
+			sourceTree = "<group>";
+		};
+		85C842A41E7D19E900398BD2 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				85C842A61E7D1A7B00398BD2 /* ApiRequest.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		85C842A51E7D19E900398BD2 /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				85C842AE1E7D45EE00398BD2 /* SongListViewController.swift */,
+				85C842B01E7D49DD00398BD2 /* SongPlayerViewController.swift */,
+				85C842B11E7D49DD00398BD2 /* SongPlayerViewController.xib */,
+				85C842B41E7D4B6000398BD2 /* SongTableViewCell.swift */,
+				85C842B51E7D4B6000398BD2 /* SongTableViewCell.xib */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85C8426D1E7D192900398BD2 /* Edfora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C842991E7D192900398BD2 /* Build configuration list for PBXNativeTarget "Edfora" */;
+			buildPhases = (
+				85C8426A1E7D192900398BD2 /* Sources */,
+				85C8426B1E7D192900398BD2 /* Frameworks */,
+				85C8426C1E7D192900398BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Edfora;
+			productName = Edfora;
+			productReference = 85C8426E1E7D192900398BD2 /* Edfora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85C842841E7D192900398BD2 /* EdforaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8429C1E7D192900398BD2 /* Build configuration list for PBXNativeTarget "EdforaTests" */;
+			buildPhases = (
+				85C842811E7D192900398BD2 /* Sources */,
+				85C842821E7D192900398BD2 /* Frameworks */,
+				85C842831E7D192900398BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C842871E7D192900398BD2 /* PBXTargetDependency */,
+			);
+			name = EdforaTests;
+			productName = EdforaTests;
+			productReference = 85C842851E7D192900398BD2 /* EdforaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85C8428F1E7D192900398BD2 /* EdforaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8429F1E7D192900398BD2 /* Build configuration list for PBXNativeTarget "EdforaUITests" */;
+			buildPhases = (
+				85C8428C1E7D192900398BD2 /* Sources */,
+				85C8428D1E7D192900398BD2 /* Frameworks */,
+				85C8428E1E7D192900398BD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85C842921E7D192900398BD2 /* PBXTargetDependency */,
+			);
+			name = EdforaUITests;
+			productName = EdforaUITests;
+			productReference = 85C842901E7D192900398BD2 /* EdforaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85C842661E7D192900398BD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sushant kumar";
+				TargetAttributes = {
+					85C8426D1E7D192900398BD2 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XL3DT9SM2L;
+						ProvisioningStyle = Automatic;
+					};
+					85C842841E7D192900398BD2 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XL3DT9SM2L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 85C8426D1E7D192900398BD2;
+					};
+					85C8428F1E7D192900398BD2 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = XL3DT9SM2L;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 85C8426D1E7D192900398BD2;
+					};
+				};
+			};
+			buildConfigurationList = 85C842691E7D192900398BD2 /* Build configuration list for PBXProject "Edfora" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85C842651E7D192900398BD2;
+			productRefGroup = 85C8426F1E7D192900398BD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85C8426D1E7D192900398BD2 /* Edfora */,
+				85C842841E7D192900398BD2 /* EdforaTests */,
+				85C8428F1E7D192900398BD2 /* EdforaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85C8426C1E7D192900398BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C842B71E7D4B6000398BD2 /* SongTableViewCell.xib in Resources */,
+				85C2EDB01E80343500480ACD /* local.json in Resources */,
+				85C8427F1E7D192900398BD2 /* LaunchScreen.storyboard in Resources */,
+				85C842B31E7D49DD00398BD2 /* SongPlayerViewController.xib in Resources */,
+				85C8427C1E7D192900398BD2 /* Assets.xcassets in Resources */,
+				85C842771E7D192900398BD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C842831E7D192900398BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8428E1E7D192900398BD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85C8426A1E7D192900398BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C842AB1E7D2B0700398BD2 /* AppLogic.swift in Sources */,
+				85C8427A1E7D192900398BD2 /* Edfora.xcdatamodeld in Sources */,
+				85C842A71E7D1A7B00398BD2 /* ApiRequest.swift in Sources */,
+				85C842B21E7D49DD00398BD2 /* SongPlayerViewController.swift in Sources */,
+				85C842B61E7D4B6000398BD2 /* SongTableViewCell.swift in Sources */,
+				85C842AF1E7D45EE00398BD2 /* SongListViewController.swift in Sources */,
+				85C842721E7D192900398BD2 /* AppDelegate.swift in Sources */,
+				85C842A91E7D224E00398BD2 /* Song.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C842811E7D192900398BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C8428A1E7D192900398BD2 /* EdforaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85C8428C1E7D192900398BD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C842951E7D192900398BD2 /* EdforaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85C842871E7D192900398BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C8426D1E7D192900398BD2 /* Edfora */;
+			targetProxy = 85C842861E7D192900398BD2 /* PBXContainerItemProxy */;
+		};
+		85C842921E7D192900398BD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85C8426D1E7D192900398BD2 /* Edfora */;
+			targetProxy = 85C842911E7D192900398BD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		85C842751E7D192900398BD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C842761E7D192900398BD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		85C8427D1E7D192900398BD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85C8427E1E7D192900398BD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85C842971E7D192900398BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		85C842981E7D192900398BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85C8429A1E7D192900398BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XL3DT9SM2L;
+				INFOPLIST_FILE = Edfora/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Edfora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		85C8429B1E7D192900398BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XL3DT9SM2L;
+				INFOPLIST_FILE = Edfora/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Edfora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		85C8429D1E7D192900398BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XL3DT9SM2L;
+				INFOPLIST_FILE = EdforaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.EdforaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Edfora.app/Edfora";
+			};
+			name = Debug;
+		};
+		85C8429E1E7D192900398BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = XL3DT9SM2L;
+				INFOPLIST_FILE = EdforaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.EdforaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Edfora.app/Edfora";
+			};
+			name = Release;
+		};
+		85C842A01E7D192900398BD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XL3DT9SM2L;
+				INFOPLIST_FILE = EdforaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.EdforaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Edfora;
+			};
+			name = Debug;
+		};
+		85C842A11E7D192900398BD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = XL3DT9SM2L;
+				INFOPLIST_FILE = EdforaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.EdforaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Edfora;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85C842691E7D192900398BD2 /* Build configuration list for PBXProject "Edfora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C842971E7D192900398BD2 /* Debug */,
+				85C842981E7D192900398BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C842991E7D192900398BD2 /* Build configuration list for PBXNativeTarget "Edfora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8429A1E7D192900398BD2 /* Debug */,
+				85C8429B1E7D192900398BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C8429C1E7D192900398BD2 /* Build configuration list for PBXNativeTarget "EdforaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C8429D1E7D192900398BD2 /* Debug */,
+				85C8429E1E7D192900398BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C8429F1E7D192900398BD2 /* Build configuration list for PBXNativeTarget "EdforaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85C842A01E7D192900398BD2 /* Debug */,
+				85C842A11E7D192900398BD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85C842781E7D192900398BD2 /* Edfora.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85C842791E7D192900398BD2 /* Edfora.xcdatamodel */,
+			);
+			currentVersion = 85C842791E7D192900398BD2 /* Edfora.xcdatamodel */;
+			path = Edfora.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 85C842661E7D192900398BD2 /* Project object */;
+}
